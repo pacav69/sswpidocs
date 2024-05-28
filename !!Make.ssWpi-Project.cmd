@@ -2,7 +2,7 @@
 @echo off
 
 @REM // !!Make.SetupS-Project
-@REM // Copyright (c) 2023 LastOS Team
+@REM // Copyright (c) 2011-2024 LastOS Team
 @REM // All rights reserved. License: MIT License
 :Set parameters
 @REM change the ProjectVersion

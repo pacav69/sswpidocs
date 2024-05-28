@@ -1,5 +1,5 @@
 @REM // ssWpi-Project
-@REM // Copyright (c) 2023 LastOS Team
+@REM // Copyright (c) 2011-2024 LastOS Team
 @REM // All rights reserved. License: MIT License
 
 :This script creates sswpi documents.

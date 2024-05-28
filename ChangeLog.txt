@@ -1,0 +1,14 @@
+Changelog
+
+---------------------------------------------
+28May2024
+---------------------------------------------
+creation of new version of manual
+
+---------------------------------------------
+11Sep2011
+---------------------------------------------
+initial release of user manual
+ssWpi v9.11.12
+format PDF and DOC
+ssWPI_User_Manual_v9.11.12

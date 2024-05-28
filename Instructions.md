@@ -83,7 +83,7 @@ record changes made to files in the changelog.txt so other people can see what w
 
 help files are located here:
 
-     .\SetupS.Project_DevelopersPack\Source.Code\Tools\sstekhelpfiles\ssTek
+     .\Source.Code\Tools\sstekhelpfiles\ssTek
 
 use all the HTML and images files
 

@@ -38,6 +38,7 @@ this will copy the files to your computer into the created subdirectory.
 * 7z.exe/dll v23.01 -[here](http://www.7-zip.org)
 * 7zSD.sfx Modified SFX Module v1.6 -[here](http://7zsfx.info/en/)
 *  HelpNDoc v8.8 Needed to edit/compile help file -[here](https://www.helpndoc.com/)
+*  HTML Help Workshop v1.32 for creating help files
 * Visual Studio Code
 <img src="https://visualstudio.microsoft.com/wp-content/uploads/2019/09/vs-code-responsive-01-1.png" alt="Visual Studio Code logo" style="height: 50px; width:60px;"/>
 

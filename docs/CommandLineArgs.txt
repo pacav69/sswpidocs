@@ -1,0 +1,65 @@
+'Set some defaults based on command line arguments
+
+If CommandLineArgs <> "" Then 'Process Command Line - will overwrite anything already set - Don't waste time if Command line not used
+  
+  If Instr(CommandLineArgs,"-fullscreen") >0 Then FullScreenMode = True
+  If Instr(CommandLineArgs,"-notfullscreen") >0 Then FullScreenMode = False
+  If Instr(CommandLineArgs,"-showsplash") >0 Then SplashShown = True
+  If Instr(CommandLineArgs,"-hidesplash") >0 Then SplashShown = False
+  If Instr(CommandLineArgs,"-launcher") >0 Then LauncherMode = True
+  If Instr(CommandLineArgs,"-notlauncher") >0 Then LauncherMode = False
+  If Instr(CommandLineArgs,"-skipparentbranchscan") >0 Then SkipParentBranchScan = True
+  If Instr(CommandLineArgs,"-dontskipparentbranchscan") >0 Then SkipParentBranchScan = False
+  If Instr(CommandLineArgs,"-skipbranchscan") >0 Then SkipParentBranchScan = True 'Only added this line so LastOS Builder works with Generating DB's
+  If Instr(CommandLineArgs,"-usedblocal") >0 Then UseDBLocal = True
+  If Instr(CommandLineArgs,"-dontusedblocal") >0 Then UseDBLocal = False
+  If Instr(CommandLineArgs,"-generate") >0 Then GenerateDBOnly = True 'This will allow LastOS Builder to Generate ssWPI DB's automated.
+  If Instr(CommandLineArgs,"-noerror") >0 Then NoError = True
+  
+  If Instr(CommandLineArgs,"-install") >0 Then
+    LauncherMode = False
+    InstallingOnly = True
+  End If
+  If Instr(CommandLineArgs,"-newsetup") >0 Then
+    LauncherMode = False
+    NewSetup = True
+    LoadDefaultPreset=True
+  End If
+  If Instr(CommandLineArgs,"-loaddefaultpreset") >0 Then
+    LauncherMode = False
+    NewSetup = False
+    LoadDefaultPreset=True
+  End If
+  
+  'Get Arch and OS bypass
+  If Instr(CommandLineArgs,"-x64") >0 Then
+    ArchModeIsx64 = True
+    ArchOSString = "x64"
+  End If
+  If Instr(CommandLineArgs,"-x86") >0 Then
+    ArchModeIsx64 = False
+    ArchOSString = "x86"
+  End If
+  If Instr(CommandLineArgs,"-xp") >0 Then
+    OSMode = 1
+    OSString = "XP"
+  End If
+  If Instr(CommandLineArgs,"-7") >0 Then
+    OSMode = 2
+    OSString = "7"
+  End If
+  If Instr(CommandLineArgs,"-8") >0 Then
+    OSMode = 2
+    OSString = "8"
+  End If
+  If Instr(CommandLineArgs,"-10") >0 Then
+    OSMode = 2
+    OSModeExtended=4
+    OSString = "10"
+  End If
+  If Instr(CommandLineArgs,"-11") >0 Then
+    OSMode = 2
+    OSModeExtended=5
+    OSString = "11"
+  End If
+End If

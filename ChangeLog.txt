@@ -1,6 +1,15 @@
 Changelog
 
 ---------------------------------------------
+30May2024
+---------------------------------------------
+added shortcutkeys.md DOC
+added commandline.md doc 
+added sswpimain.png splash logo
+updated readme
+
+
+---------------------------------------------
 29May2024
 ---------------------------------------------
 added helpndoc

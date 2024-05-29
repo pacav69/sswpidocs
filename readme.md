@@ -1,4 +1,5 @@
 # ssWpi Docs
+![sswpi main](images/sswpimain.png)
 
 ## LastOS Website
 [Visit LastOS Website](http://www.lastos.org)

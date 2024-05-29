@@ -5,6 +5,7 @@ Changelog
 ---------------------------------------------
 added helpndoc
 created sswpi.hnd file
+added sswpi main logo
 
 ---------------------------------------------
 28May2024

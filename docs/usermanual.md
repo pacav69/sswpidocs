@@ -1,7 +1,7 @@
 
 
 
-
+# ssWpi User Manual
 
 Contents
 Introduction:	3
@@ -27,7 +27,7 @@ Quitting ssWPI:	22
 Glossary of terms:	22
 
 
-Introduction:
+## Introduction:
 
  
 Figure 1
@@ -39,49 +39,50 @@ Optionally ssWPI can be used as a game launcher for any of your ppGames, while s
 The installation of applications from ssWPI is usually automated, and using SetupS technologies, ssWPI is able to sort your start menu, clean your desktop, tweak your settings and register your products.  With the ability to detect which OS you run it on, it will hide the applications that would not work if you tried to install them, including x86 and x64 detection.  It also checks to see which applications are already installed and hides them from the list of items you can install.  All these features are there to keep order on your PC, save you time, and make things easier to get your computer running the way you want, with the tools you need.
 
 ssWPI can be used as either a Pre-Installer or a Post-Installer.  As a Pre-Installer, ssWPI can be run at the start of Windows XP/Vista /7 installs, allowing you to preselect the applications you want installed on the fresh OS before you actually begin the OS installation process.  By the time you get back from eating dinner your OS will be sitting on the desktop ready to go with all your choices installed and configured.  As a Post-Installer, it can be run from the DVD/USB anytime you need to install an application or game.
-Features:
 
-Load and Save Presets
-Show a Screenshot of Applications and Games
-Show Descriptions of Applications and Games
-Hide Items detected as currently installed
-Hide Items not intended for installing to the current OS
-Countdown to Automatically load a default preset list of Items
-Mini Installer to allow you to keep using your OS while installing
-Color coded application types to quickly identify them
-Quality Scaled Graphics for low or high screen resolution usage
-Ability to specify additional stored application locations
-Group all Items into self defined Categories
-Theme-able Loader, Main screen, and Mini Installer
-Auto Seek Items, scan all drives for Items to add
-Create database of installable items for faster loading
-Full Screen Mode or Windowed mode (F11 or Alt + Enter to switch between them)
-Easy to integrate in unattended OS Mods
+## Features:
+
+* Load and Save Presets
+* Show a Screenshot of Applications and Games
+* Show Descriptions of Applications and Games
+* Hide Items detected as currently installed
+* Hide Items not intended for installing to the current OS
+* Countdown to Automatically load a default preset list of Items
+* Mini Installer to allow you to keep using your OS while installing
+* Color coded application types to quickly identify them
+* Quality Scaled Graphics for low or high screen resolution usage
+* Ability to specify additional stored application locations
+* Group all Items into self defined Categories
+* Theme-able Loader, Main screen, and Mini Installer
+* Auto Seek Items, scan all drives for Items to add
+* Create database of installable items for faster loading
+* Full Screen Mode or Windowed mode (F11 or Alt + Enter to switch between them)
+* Easy to integrate in unattended OS Mods
 
 
-Using ssWPI:
+## Using ssWPI:
 
 ssWPI handles three basic types of applications, or items.  They are:
 
-ssApps - Applications that install silently. i.e. no user interaction.
-ppApps - permanent portable Applications.  Applications that are self contained.
-ppGames - permanent portable Games.  Games that are self contained.
+* ssApps - Applications that install silently. i.e. no user interaction.
+* ppApps - permanent portable Applications.  Applications that are self contained.
+* ppGames - permanent portable Games.  Games that are self contained.
 
 ssApps are pretty much what most people think of when they think of computer software applications.  They are installed on your HDD along with all the bells and whistles.  They tend to keep all their settings and preferences either in the system registry or some other system file so that once installed, they run only on that one machine until they are uninstalled and reinstalled on another machine.  The only difference in that and an ssApp, is that ssApps are designed to install silently.  Permanent portable Apps (ppApps), being portable, do not generally use the registry or system file locations, but rather keep all their personalization information in a file stored with the application itself.  This makes the application self contained and easy to move from one computer or OS to another.  They are best installed to a non-system partition/HDD allowing you to use them again even after a fresh OS installation.  Using SetupS technologies, ssWPI is able to create shortcuts and associate file types automatically even for these portable applications.  They are also designed to install silently.  Permanent portable Games (ppGames ) are games that are self contained in the same way as ppApps.  They do not require any other materials, such as a CD/DVD to be present in order to play the game.
 
 ssWPI has default locations it searches for the various types of apps.  They are:
 
-ssApps - X:\ssAppsInstalls 
-ppApps - X:\ppAppsInstalls
-ppGames - X:\ppGamesInstalls
+* ssApps - X:\ssAppsInstalls 
+* ppApps - X:\ppAppsInstalls
+* ppGames - X:\ppGamesInstalls
 
 Where X: is any valid drive on your system.  ssWPI will search every drive on your system looking for those folders and any app they might contain.  As you become more familiar with ssWPI, you will learn how to specify other locations that you wish ssWPI to search for apps.
 
 ssWPI requires that you have an identification file stored with each of your items, either applications or games, in order for them to be detected and added to the list of possible installable items.  That file’s name is dependent on the type of item.  Those file names are:
 
-ssApps - ssApp.app
-ppApps - ppApp.app
-ppGames - ppGame.ppg
+* ssApps - ssApp.app
+* ppApps - ppApp.app
+* ppGames - ppGame.ppg
 
 A companion program of ssWPI, SetupS, works alongside ssWPI to do the actual installation of the apps using the information in these files.  These .app and .ppg files are created by the SetupS Builder or can be written in notepad or any text editor if you are comfortable doing so.  They contain summary information for each app including Title, Version, Description, and Install Path, among other information. You are also able to include an optional screenshot for ssWPI to display and an icon for use during installation. Through SetupS, for an individual app installation, you’re also able to go into the ssAppsInstalls/ppAppsInstalls/ppGamesInstalls folders and by double clicking, run the .app or .ppg file to install and integrate the app automatically.  Another method for installing the app is to use the Send To menu in the Windows Context Menu by right clicking on the app and selecting “Send To – SetupS”.  No matter which of the methods you choose, ssWPI, double clicking, or Send To, SetupS uses the information in the .app or .ppg files to install the apps of your choosing, extracting them if necessary from a compressed format, creates their shortcuts, associates file types and anything else you may need to do to keep your important applications set up and ready to go.  Regenerator is another included tool made to create the shortcuts and associate the file types for all your installed ppApps.  If you had previously installed them to a non-system partition/HDD, then by simply running this on a fresh OS you can have them all reintegrated into your new OS without needing to reinstall or extract them from a DVD/USB device.  This reduces install time and allows you to keep things as you like it.
 
@@ -91,26 +92,26 @@ The general usage of ssWPI is mouse driven, although you are also able to use th
 
 
 
-Loading Screen -
+### Loading Screen -
 The loading screen, also known as a splash screen, shown in Figure 2, is included as an indication that your OS is busy looking for applications/games.  If you are using the auto start Command Line “ssWPI.exe -AutoStartTimer=18", then you will also see a countdown timer, shown in Figure 7.  Once the timer reaches 0, ssWPI will load in a Default Preset (selection of items), if those items are present on your system, and exit.  That selection of items can be installed later using the Command Line “ssWPI.exe -Install”.
 
  
 Figure 2
 
 
-Mini installer
+## Mini installer
 
  
 Figure 3 
 Figure 3 shows the Mini Installer screen displaying a list of selected applications and the progress of installation.
 
 
-ssWPI’s Main Screen –
+## ssWPI’s Main Screen –
 
  
 Figure 4
 
-ssWPI Program Description - 
+## ssWPI Program Description - 
 The items that are selected are silently installed.
 To install select the Items to install by marking the selection boxes.
     
@@ -126,19 +127,19 @@ The Hidden Items count includes Items that are not intended for the currently ru
 
  
 Figure 6
-Category - 
+## Category - 
 This lists the Categories that are found inside the ssApp.app, ppApp.app and ppGame.ppg files.  Clicking them will only show items in that category.  The “All” category lists all available items depending on your options and current OS/Arch.  “Favorites” is a category available in the Game Launcher.  By right clicking a game you can toggle making it a favorite, which are shown in a different color than non favorites.  
 
-Items - 
+## Items - 
 A list of available Items (applications or games) you can install, or play if you are in Game Launcher mode.  Clicking the name will show you the screenshot and description.  Clicking the Checkbox will select it for installation.  You are also able to use the arrow keys to navigate, and Space or Enter to select.
 
-Title - 
+## Title - 
 This displays the title of the currently selected application.  It is displayed at the top right of the screen.  Clicking this will open the item’s URL in your browser if specified.
 
-Screenshot - 
+## Screenshot - 
 This is displayed in the right panel.  It is a graphic file of jpg format that is optionally included in each apps subfolder, alongside the ssApp.app/ppApp.app/ppGame.ppg.  There can also be another graphic file of png format that will display during installation of the app in the Mini Installer.
 
-Description - 
+## Description - 
 Category: Example
 Location: X:\ssAppsInstalls\SampleApp\ssApp.app (where x: is the drive of the installing application)
 Install To: Destination Location.
@@ -156,17 +157,18 @@ Figure 8
 
 Using the Context Menu (on the Item List) you are able to save or load a preset selection of Items, and pick from several hide/show options.  The context menu also has other tools to help with common tasks.
 
-Select All	-Selects all the Items on the visible list.
-Select None	-Un-Selects all the Items on the visible list.
-Invert Selection 	-Un-Selects the Selected and Selects the Un-Selected Items on the visible list.
+## Selections
+* Select All	-Selects all the Items on the visible list.
+* Select None	-Un-Selects all the Items on the visible list.
+* Invert Selection 	-Un-Selects the Selected and Selects the Un-Selected Items on the visible list.
 
-Select ssApps	 -Selects all the ssApps Items on the visible list.
-Select ppApps	 -Selects all the ppApps Items on the visible list.
-Select ppGames	-Selects all the ppGames Items on the visible list.
+* Select ssApps	 -Selects all the ssApps Items on the visible list.
+* Select ppApps	 -Selects all the ppApps Items on the visible list.
+* Select ppGames	-Selects all the ppGames Items on the visible list.
 
-Un-Select ssApps	-Un-Selects all the ssApps Items on the visible list.
-Un-Select ppApps	-Un-Selects all the ppApps Items on the visible list.
-Un-Select ppGames	-Un-Selects all the ppGames Items on the visible list.
+* Un-Select ssApps	-Un-Selects all the ssApps Items on the visible list.
+* Un-Select ppApps	-Un-Selects all the ppApps Items on the visible list.
+* Un-Select ppGames	-Un-Selects all the ppGames Items on the visible list.
 
  
 Figure 9

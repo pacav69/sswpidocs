@@ -97,3 +97,13 @@ Select Case dialogButton
   Case dialog.CancelButton
     ' Cancel
 End Select
+
+
+======================
+
+MessageBox("File transfer complete!")
+
+==================================
+key shortcut
+
+#App.kFileQuitShortcut
